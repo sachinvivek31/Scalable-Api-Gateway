@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  api-gateway:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.yaml:/root/config.yaml

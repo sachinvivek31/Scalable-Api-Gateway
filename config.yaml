@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+services:
+  - name: "secure-service"
+    prefix: "/get"
+    target: "https://httpbin.org"
+    requires_auth: true
+    rate_limit: 1.0
+  - name: "public-service"
+    prefix: "/post"
+    target: "https://httpbin.org"
+    requires_auth: false
+    rate_limit: 5.0
