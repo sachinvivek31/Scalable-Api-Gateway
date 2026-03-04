@@ -51,8 +51,9 @@ go run main.go
 ```
 
 ### 2. Run with Docker
-- docker compose up --build
-
+```bash
+docker compose up --build
+```
 
 ## Testing
 **Feature ** |  **Command**                                                                              | **Expected Result**
